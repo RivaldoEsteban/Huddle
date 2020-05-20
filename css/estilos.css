@@ -1,20 +1,29 @@
 body{
     background-color: hsl(257, 40%, 49%);
-    padding: 100px;
+    background-image: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    
     /*flex-wrap: wrap;*/
 }
 
-/*.wraper{
-    width: 1440px;
-}*/
-
-.box{
-    border: 10px solid red; 
+.wrapper{
+    max-width: 1340px ;
     
+    margin: auto;
 }
+    
 
-.title{
-    padding-bottom: 80px;
+
+
+
+.logo{
+    margin: 3em 0 6em 0;
+    /*padding-bottom: 80px;*/
+    /*font-family: 'Poppins', sans-serif;*/
 }
 .cuerpo{
     display: flex;
@@ -22,22 +31,119 @@ body{
 }
 
 .image{
-    width: 50%;
+    flex: 1;
+   
+    margin-right: 2em;
+    
 }
 
-.image-principal{
-    display: flex;
-}
+
 .principal{
-    width: 50%;
+    max-width: 600px;
     margin: auto;
-    padding: 30px 0 0 30px;
-    font-size: 25px;
+    
+   
+    
+    
 }
 
-.bottom{
+.button{
+    display: inline-flex;
+    padding: 0.7em 2.5em;
     background-color:white ;
     border: 1px solid white;
-    border-radius: 1em;
+    border-radius: 2em;
+    text-decoration: none;
+    margin-top: 1em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    min-width: 100px;
+    justify-content: center;
+
 }
 
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+.cuerpo-text{
+    font-size: 1.2em;
+    margin: 1em 0 1em 0;
+}
+
+*{
+    margin: 0;
+}
+
+.hero{
+    display: flex;
+}
+
+.footer{
+    text-align: right;
+    /*margin-right:3em ;
+    margin-bottom: 2em;*/
+}
+
+.fab{
+    display: inline-flex !important; 
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+    width: 33px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 13px;
+    margin-left: .8em;
+}
+
+@media screen and (max-width:1024px){
+
+    body{
+        background-image: url(/images/bg-mobile.svg);
+        background-size: 100% auto;
+        background-position: center top;
+    }
+    .hero{
+        display: block;
+    }
+    .image{
+        margin-right: 0 ;
+        text-align: center;
+    }
+    .wrapper{
+        padding: 0 2em;
+    }
+    .image img{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .principal{
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+        margin: 80px 0 50px 0;
+    }
+}       
+
+
+@media screen and (max-width:768px){
+    .title{
+        font-size: 2em;
+    }
+    .logo{
+        margin: 1.8em 0  4em 0;
+    }
+    .logo img{
+        width: 130px;
+    }
+
+}    
+
+@media screen and (max-width:320px){
+
+}                                                 
