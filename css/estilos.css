@@ -1,0 +1,43 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+    padding: 100px;
+    /*flex-wrap: wrap;*/
+}
+
+/*.wraper{
+    width: 1440px;
+}*/
+
+.box{
+    border: 10px solid red; 
+    
+}
+
+.title{
+    padding-bottom: 80px;
+}
+.cuerpo{
+    display: flex;
+    color: white;
+}
+
+.image{
+    width: 50%;
+}
+
+.image-principal{
+    display: flex;
+}
+.principal{
+    width: 50%;
+    margin: auto;
+    padding: 30px 0 0 30px;
+    font-size: 25px;
+}
+
+.bottom{
+    background-color:white ;
+    border: 1px solid white;
+    border-radius: 1em;
+}
+
